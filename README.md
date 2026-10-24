@@ -1,6 +1,6 @@
 # 151 Trading Strategies API
 
-FastAPI implementation of non-options trading strategies from the paper "151 Trading Strategies" by Zura Kakushadze and Juan Andrés Serur.
+FastAPI implementation of non-options trading strategies, using [151 Trading Strategies](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3247865) by Zura Kakushadze and Juan Andrés Serur as an example source.
 
 ## Installation
 
@@ -172,13 +172,15 @@ print(response.json())
 
 ## Excluded Options-Based Strategies
 
-The following strategies from the paper are NOT implemented as they require options:
+The following strategies from the example paper are NOT implemented as they require options:
 - Section 2 (all options strategies: covered calls, spreads, straddles, etc.)
 - Strategy 6.3 (Dispersion Trading)
 - Strategy 7.4 (Volatility Risk Premium)
 - Strategy 7.5 (Volatility Skew)
 - Strategy 13.2 (Cross-border Tax Arbitrage with options)
 
-## Reference
+## Example source
 
-Kakushadze, Z., & Serur, J. A. (2018). 151 Trading Strategies. SSRN Electronic Journal.
+The strategy descriptions follow, as an example, the paper:
+
+Kakushadze, Z., & Serur, J. A. (2018). *151 Trading Strategies*. SSRN. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3247865

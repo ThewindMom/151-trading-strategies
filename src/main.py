@@ -1,6 +1,7 @@
 """
 151 Trading Strategies API
-Based on the paper by Zura Kakushadze and Juan Andrés Serur
+Example source: 151 Trading Strategies by Zura Kakushadze and Juan Andrés Serur
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3247865
 Implements non-options trading strategies as FastAPI endpoints
 """
 from fastapi import FastAPI
@@ -27,8 +28,9 @@ from strategies.cash import all_routers as cash_routers
 app = FastAPI(
     title="151 Trading Strategies API",
     description="""
-    Implementation of non-options trading strategies from the paper 
-    "151 Trading Strategies" by Kakushadze & Serur.
+    Implementation of non-options trading strategies, using
+    "151 Trading Strategies" by Kakushadze & Serur as an example source:
+    https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3247865
     
     ## Categories
     - **Stocks**: Price momentum, value, pairs trading, stat arb, etc.
